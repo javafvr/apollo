@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+.block {
+  background-color: yellow;
+  padding: 20px;
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.nav {
+  background-color: #414141;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.slider {
+  background-color: #215993;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.line {
+  border-bottom: 1px solid #ccc;
+}
+.footer {
+  background-color: #414141;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
