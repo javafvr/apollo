@@ -6,44 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="stylesheet" href="libs/normalize/normalize.css"/>
     <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="libs/OwlCarousel2-2.3.3/dist/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="libs/OwlCarousel2-2.3.3/dist/assets/owl.theme.default.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif&amp;amp;subset=cyrillic" rel="stylesheet"/>
   </head>
   <body>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="block">Логотип</div>
+    <header class="section-header">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="section-logo text-center">
+              <h2 class="section-logo-title">аполло 404</h2>
+              <h2 class="section-logo-title--slogan">хостинг компания</h2>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <nav class="nav">
-      <div class="container">
-        <div class="block">Навигация</div>
-      </div>
+    </header>
+    <nav class="nav"><a href="#" id="pull">Навигация
+        <div class="nav_pull__icon"><span></span><span></span><span></span></div></a>
+      <ul id="nav__mobile-list">
+        <li><a href="#">главная</a></li>
+        <li><a href="#">как-мы-работаем</a></li>
+        <li><a href="#">фрилансерам</a></li>
+        <li><a href="#">стартапам</a></li>
+        <li><a href="#">тарифы</a></li>
+        <li><a href="#">контакты</a></li>
+      </ul>
     </nav>
     <div class="slider">
       <div class="container">
-        <div class="block">Слайдер</div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel justify-content-stretch">
+              <div>
+                <article class="text-center">
+                  <h2 class="text-visible">Тариф для фрилансеров</h2>
+                  <h2 class="text-hidden">Тариф для фрилансеров и небольших сайтов</h2>
+                  <p class="text-visible">Надежные сервера, отзывчивая техподдержка.</p>
+                  <p class="text-hidden">Разместите свое портфолио и сайты клиентов. Надежные сервера, отзывчивая техподдержка.</p>
+                </article>
+              </div>
+              <div>
+                <article>
+                  <h2 class="text-visible">Хостинг для стартапа</h2>
+                  <h2 class="text-hidden">Нужен хостинг для стартапа?</h2>
+                  <p class="text-visible">Увеличивайте мощности при необходимости.</p>
+                  <p class="text-hidden">Начните со специального стартап тарифа. Увеличивайте мощности при необходимости.</p>
+                </article>
+              </div>
+              <div>
+                <article>
+                  <h2 class="text-visible">Highload площадка</h2>
+                  <h2 class="text-hidden">Надежная площадка для высоконагруженных проектов</h2>
+                  <p class="text-visible">Супер мощные сервера, мгновенная масштабируемость. </p>
+                  <p class="text-hidden">Супер мощные сервера, мгновенная масштабируемость, гибкая конфигурация.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="block">Как мы работаем</div>
+    <div class="cards">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h2 class="content-title text-center">Как мы работаем</h2>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-xl-3">
-          <div class="block">Первый</div>
-        </div>
-        <div class="col-md-6 col-xl-3">
-          <div class="block">Второй</div>
-        </div>
-        <div class="col-md-6 col-xl-3">
-          <div class="block">Третий</div>
-        </div>
-        <div class="col-md-6 col-xl-3">
-          <div class="block">Четвертый</div>
+        <div class="row row--list">
+          <div class="col-md-6 col-xl-3">
+            <div class="card text-center"><img class="card__image" src="img/weather.png"/>
+              <div class="card-descr">
+                <h4 class="card-descr__title">Работаем в любую  погоду</h4>
+                <p class="card-descr__article">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card text-center"><img class="card__image" src="img/graph.png"/>
+              <div class="card-descr">
+                <h4 class="card-descr__title">Используем нано технологии</h4>
+                <p class="card-descr__article">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card text-center"><img class="card__image" src="img/flipchart.png"/>
+              <div class="card-descr">
+                <h4 class="card-descr__title">Стандарты качества  по ГОСТу</h4>
+                <p class="card-descr__article">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card text-center"><img class="card__image" src="img/presentation.png"/>
+              <div class="card-descr">
+                <h4 class="card-descr__title">Стремительно  развиваемся</h4>
+                <p class="card-descr__article">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -104,5 +169,8 @@
         <div class="block">Копирайт</div>
       </div>
     </footer>
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <script src="libs/OwlCarousel2-2.3.3/dist/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

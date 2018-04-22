@@ -6,32 +6,74 @@ html(lang="ru")
 		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 		link(rel="stylesheet", href="libs/normalize/normalize.css")
 		link(rel="stylesheet", href="libs/bootstrap/bootstrap-grid.min.css")
+		link(rel="stylesheet" href="libs/OwlCarousel2-2.3.3/dist/assets/owl.carousel.min.css")
+		link(rel="stylesheet" href="libs/OwlCarousel2-2.3.3/dist/assets/owl.theme.default.css")
 		link(rel="stylesheet", href="css/main.css")
+		//- GOOGLE FONTS
+		link(href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif&amp;subset=cyrillic" rel="stylesheet")
 
 	body
-		.container
-			.row.justify-content-center
-				.col-md-6
-					.block Логотип
-		nav.nav
+		header.section-header
 			.container
-				.block Навигация
+				.row.justify-content-center
+					.col-md-6
+						.section-logo.text-center
+							h2.section-logo-title аполло 404
+							h2.section-logo-title--slogan хостинг компания
+		include _navigation
 		.slider
 			.container
-				.block Слайдер
-		.container
-			.row.justify-content-center
-				.col-md-6
-					.block Как мы работаем
-			.row
-				.col-md-6.col-xl-3
-					.block Первый
-				.col-md-6.col-xl-3
-					.block Второй
-				.col-md-6.col-xl-3
-					.block Третий
-				.col-md-6.col-xl-3
-					.block Четвертый
+				.row
+					.col-md-12
+						.owl-carousel.justify-content-stretch
+								div
+									article.text-center
+										h2.text-visible Тариф для фрилансеров
+										h2.text-hidden Тариф для фрилансеров и небольших сайтов
+										p.text-visible Надежные сервера, отзывчивая техподдержка.
+										p.text-hidden Разместите свое портфолио и сайты клиентов. Надежные сервера, отзывчивая техподдержка.
+								div
+									article
+										h2.text-visible Хостинг для стартапа
+										h2.text-hidden Нужен хостинг для стартапа?
+										p.text-visible Увеличивайте мощности при необходимости.
+										p.text-hidden Начните со специального стартап тарифа. Увеличивайте мощности при необходимости.
+								div
+									article
+										h2.text-visible Highload площадка
+										h2.text-hidden Надежная площадка для высоконагруженных проектов
+										p.text-visible Супер мощные сервера, мгновенная масштабируемость. 
+										p.text-hidden Супер мощные сервера, мгновенная масштабируемость, гибкая конфигурация.
+		.cards
+			.container
+				.row.justify-content-center
+					.col-md-6
+						h2.content-title.text-center Как мы работаем
+				.row.row--list
+					.col-md-6.col-xl-3
+						.card.text-center
+							img(src="img/weather.png" class="card__image")
+							.card-descr
+								h4.card-descr__title Работаем в любую  погоду
+								p.card-descr__article Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+					.col-md-6.col-xl-3
+						.card.text-center
+							img(src="img/graph.png" class="card__image")
+							.card-descr
+								h4.card-descr__title Используем нано технологии
+								p.card-descr__article Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+					.col-md-6.col-xl-3
+						.card.text-center
+							img(src="img/flipchart.png" class="card__image")
+							.card-descr
+								h4.card-descr__title Стандарты качества  по ГОСТу
+								p.card-descr__article Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+					.col-md-6.col-xl-3
+						.card.text-center
+							img(src="img/presentation.png" class="card__image")
+							.card-descr
+								h4.card-descr__title Стремительно  развиваемся
+								p.card-descr__article Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
 		.line
 		.container
 			.row
@@ -68,4 +110,7 @@ html(lang="ru")
 					.col-md-4.col-xl-3
 						.block Колонка 3
 				.block Копирайт
+		script(src="libs/jquery-3.3.1.min.js")
+		script(src="libs/OwlCarousel2-2.3.3/dist/owl.carousel.min.js")
+		script(src="js/main.js")
 
