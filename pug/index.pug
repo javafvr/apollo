@@ -6,10 +6,14 @@ html(lang="ru")
 		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 		link(rel="stylesheet", href="libs/normalize/normalize.css")
 		link(rel="stylesheet", href="libs/bootstrap/bootstrap-grid.min.css")
-		link(rel="stylesheet", href="css/main.css")
+		//- Owl-Carousel
+		link(rel="stylesheet" href="libs/owlcarousel2/owl.carousel.min.css")
+		//- Fonts
 		link(rel="stylesheet", href="fonts/noto/noto.css")
 		link(rel="stylesheet", href="fonts/notoserif/notoserif.css")
 		link(rel="stylesheet", href="fonts/als-rubl/als-rubl.css")
+		//- MY STYLES
+		link(rel="stylesheet", href="css/main.css")
 
 	body
 		//- Logo
@@ -40,9 +44,34 @@ html(lang="ru")
 						a(href="#") тарифы
 					li
 						a(href="#") контакты
-		.slider
+		//- Slider
+		.slider.text-center
 			.container
-				.block Слайдер
+				.owl-carousel#top-slider
+					.row
+						.col-sm-8.offset-sm-2.col-lg-6.offset-lg-3
+							.d-none.d-sm-block
+								.slider__title Тариф для фрилансеров и небольших сайтов
+								.slider__slogan Разместите свое портфолио и сайты клиентов. Надежные сервера, отзывчивая техподдержка.
+							.d-block.d-sm-none
+								.slider__title Тариф для фрилансеров
+								.slider__slogan Надежные сервера, отзывчивая техподдержка.
+					.row
+						.col-sm-8.offset-sm-2.col-lg-6.offset-lg-3
+							.d-none.d-sm-block
+								.slider__title Нужен хостинг для стартапа?
+								.slider__slogan Разместите свое портфолио и сайты клиентов. Надежные сервера, отзывчивая техподдержка.
+							.d-block.d-sm-none
+								.slider__title Хостинг для стартапа
+								.slider__slogan Увеличивайте мощности при необходимости.
+					.row
+						.col-sm-8.offset-sm-2.col-lg-6.offset-lg-3
+							.d-none.d-sm-block
+								.slider__title Надежная площадка для высоконагруженных проектов
+								.slider__slogan Супер мощные сервера, мгновенная масштабируемость, гибкая конфигурация. 
+							.d-block.d-sm-none
+								.slider__title Highload площадка
+								.slider__slogan Супер мощные сервера, мгновенная масштабируемость. 
 		.container
 			.row.justify-content-center
 				.col-md-6

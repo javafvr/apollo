@@ -8,18 +8,13 @@ $(document).ready(function(){
 
 		$(menu).slideToggle();
 
-
 		//Добавим модификатор
 		$(this).toggleClass("navigation__toggle-button--active");
-        
-
 	});
-
 
 	// Owl-carousel version 2
 	$("#top-slider").owlCarousel({
 		items:1,
-		// theme:"top-slider-theme",
 		rewind:true,
 		nav:true,
 		dots:false,
