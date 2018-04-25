@@ -1,0 +1,52 @@
+.heading{
+	position: relative;
+	font-size: 28px;
+	font-weight: 700;
+	margin-top: 0px!important;
+	margin-bottom: 40px;
+	color: #333;
+	
+
+	@media (min-width:1200px){
+		font-size: 38px;
+	}
+	&--mb20{
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
+
+	&--number:before{
+		position: absolute;
+		left: 3px;
+		top: -35px;
+		display: block;
+		height: 26px;
+		width: 26px;
+		padding-top: 2px;
+		padding-left: 9px;
+		-webkit-border-radius: 15px;
+	        	border-radius: 15px;
+		background-color: #ffc80a;
+		color: #FFF;
+		font-size: 16px;
+		font-weight: 700;
+		content: "0";
+		
+		@media (min-width:768px){
+			left: -20px;
+			top: -20px;
+			
+		}
+		@media (min-width:1200px){
+			left: -20px;
+			top: -20px;	
+		}
+	}
+	&--number-1:before{
+		content: "1";
+	}
+	&--number-2:before{
+		content: "2";
+	}
+}

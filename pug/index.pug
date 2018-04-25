@@ -6,88 +6,101 @@ html(lang="ru")
 		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 		link(rel="stylesheet", href="libs/normalize/normalize.css")
 		link(rel="stylesheet", href="libs/bootstrap/bootstrap-grid.min.css")
-		link(rel="stylesheet" href="libs/OwlCarousel2-2.3.3/dist/assets/owl.carousel.min.css")
-		link(rel="stylesheet" href="libs/OwlCarousel2-2.3.3/dist/assets/owl.theme.default.css")
+		//- Owl-Carousel
+		link(rel="stylesheet" href="libs/owlcarousel2/owl.carousel.min.css")
+		//- Fonts
 		link(rel="stylesheet", href="css/main.css")
-		//- GOOGLE FONTS
-		link(href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif&amp;subset=cyrillic" rel="stylesheet")
+		link(rel="stylesheet", href="fonts/noto/noto.css")
+		link(rel="stylesheet", href="fonts/notoserif/notoserif.css")
+		link(rel="stylesheet", href="fonts/als-rubl/als-rubl.css")
 
 	body
-		header.section-header
-			.container
-				.row.justify-content-center
-					.col-md-6
-						.section-logo.text-center
-							h2.section-logo-title аполло 404
-							h2.section-logo-title--slogan хостинг компания
-		include _navigation
-		.slider
-			.container
-				.row
-					.col-md-12
-						.owl-carousel.justify-content-stretch
-								div
-									article.text-center
-										h2.text-visible Тариф для фрилансеров
-										h2.text-hidden Тариф для фрилансеров и небольших сайтов
-										p.text-visible Надежные сервера, отзывчивая техподдержка.
-										p.text-hidden Разместите свое портфолио и сайты клиентов. Надежные сервера, отзывчивая техподдержка.
-								div
-									article
-										h2.text-visible Хостинг для стартапа
-										h2.text-hidden Нужен хостинг для стартапа?
-										p.text-visible Увеличивайте мощности при необходимости.
-										p.text-hidden Начните со специального стартап тарифа. Увеличивайте мощности при необходимости.
-								div
-									article
-										h2.text-visible Highload площадка
-										h2.text-hidden Надежная площадка для высоконагруженных проектов
-										p.text-visible Супер мощные сервера, мгновенная масштабируемость. 
-										p.text-hidden Супер мощные сервера, мгновенная масштабируемость, гибкая конфигурация.
-		.cards
-			.container
-				.row.justify-content-center
-					.col-md-6
-						h2.content-title.text-center Как мы работаем
-				.row.row--list
-					.col-md-6.col-xl-3
-						.card.text-center
-							img(src="img/weather.png" class="card__image")
-							.card-descr
-								h4.card-descr__title Работаем в любую  погоду
-								p.card-descr__article Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-					.col-md-6.col-xl-3
-						.card.text-center
-							img(src="img/graph.png" class="card__image")
-							.card-descr
-								h4.card-descr__title Используем нано технологии
-								p.card-descr__article Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-					.col-md-6.col-xl-3
-						.card.text-center
-							img(src="img/flipchart.png" class="card__image")
-							.card-descr
-								h4.card-descr__title Стандарты качества  по ГОСТу
-								p.card-descr__article Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-					.col-md-6.col-xl-3
-						.card.text-center
-							img(src="img/presentation.png" class="card__image")
-							.card-descr
-								h4.card-descr__title Стремительно  развиваемся
-								p.card-descr__article Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-		.line
 		.container
+			.logo.text-center
+				.logo__name аполло 404
+				.logo__slogan хостинг компания
+		include _navigation
+		.slider.text-center
+			.container
+				.owl-carousel#top-slider
+					.row
+						.col-sm-8.offset-sm-2.col-lg-6.offset-lg-3
+							.d-none.d-sm-block
+								.slider__title Тариф для фрилансеров и небольших сайтов
+								.slider__slogan Разместите свое портфолио и сайты клиентов. Надежные сервера, отзывчивая техподдержка.
+							.d-block.d-sm-none
+								.slider__title Тариф для фрилансеров
+								.slider__slogan Надежные сервера, отзывчивая техподдержка.
+					.row
+						.col-sm-8.offset-sm-2.col-lg-6.offset-lg-3
+							.d-none.d-sm-block
+								.slider__title Нужен хостинг для стартапа?
+								.slider__slogan Разместите свое портфолио и сайты клиентов. Надежные сервера, отзывчивая техподдержка.
+							.d-block.d-sm-none
+								.slider__title Хостинг для стартапа
+								.slider__slogan Увеличивайте мощности при необходимости.
+					.row
+						.col-sm-8.offset-sm-2.col-lg-6.offset-lg-3
+							.d-none.d-sm-block
+								.slider__title Надежная площадка для высоконагруженных проектов
+								.slider__slogan Супер мощные сервера, мгновенная масштабируемость, гибкая конфигурация. 
+							.d-block.d-sm-none
+								.slider__title Highload площадка
+								.slider__slogan Супер мощные сервера, мгновенная масштабируемость. 
+		.container.section.text-center
+			.heading Как мы работаем
+			.row
+				.col-md-6.col-xl-3.benefit-block
+					.benefit-block__img
+						div
+							img(src="img/images/weather.png" alt="Работаем в любую погоду")
+					.benefit-block__header Работаем в любую  погоду
+					.benefit-block__descr Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+				.col-md-6.col-xl-3.benefit-block
+					.benefit-block__img
+						div
+							img(src="img/images/graph.png"	alt="Используем нано технологии")
+					.benefit-block__header Используем нано технологии
+					.benefit-block__descr Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+				.col-md-6.col-xl-3.benefit-block
+					.benefit-block__img
+						div
+							img(src="img/images/flipchart.png" alt="Стандарты качества  по ГОСТу")
+					.benefit-block__header Стандарты качества  по ГОСТу
+					.benefit-block__descr Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+				.col-md-6.col-xl-3.benefit-block
+					.benefit-block__img
+						div
+							img(src="img/images/presentation.png" alt="Стремительно  развиваемся")
+					.benefit-block__header Стремительно  развиваемся
+					.benefit-block__descr Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+		.line
+		.container.section.section--p-t-70.section--m-p-b-0.service-description
 			.row
 				.col-md-6
-					.block Картинка ноутбука
+					.service-description__img.service-description__img--xs-m-b-25
+						img(src="img/images/notebook.png" alt="Хостинг для фрилансеров")
 				.col-md-6
-					.block Хостинг для фрилансеров
+					h2.heading--mb20.heading--number.heading--number-1 Хостинг для фрилансеров
+					
+					.service-description__content
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						
+						p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+					a.service-description__button-more
 		.line
-		.container
+		.container.section.section--p-t-70.section--m-p-b-0.service-description
 			.row
 				.col-md-6.order-md-last
-					.block Картинка ракета
+					.service-description__img.service-description__img--xs-m-b-25
+						img(src="img/images/rocket.png" alt="Хостинг для фрилансеров")
 				.col-md-6
-					.block Тариф для стартапов
+					h2.heading--mb20.heading--number.heading--number-2 Тариф для стартапов
+					.service-description__content
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						
+						p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+					a.service-description__button-more
 		.line
 		.container
 			.row.justify-content-center
@@ -111,6 +124,7 @@ html(lang="ru")
 						.block Колонка 3
 				.block Копирайт
 		script(src="libs/jquery-3.3.1.min.js")
-		script(src="libs/OwlCarousel2-2.3.3/dist/owl.carousel.min.js")
+		script(src="libs/owlcarousel2/owl.carousel.min.js")
+		//- My script
 		script(src="js/main.js")
 
