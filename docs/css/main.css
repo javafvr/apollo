@@ -149,7 +149,7 @@ body {
 .navigation .container--mobile--no-padding {
   padding-left: 0px;
   padding-right: 0px;
-  min-width: 99%;
+  min-width: 100%;
 }
 @media (min-width: 992px) {
   .navigation .container--mobile--no-padding {
