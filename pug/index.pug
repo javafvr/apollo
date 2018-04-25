@@ -12,15 +12,34 @@ html(lang="ru")
 		link(rel="stylesheet", href="fonts/als-rubl/als-rubl.css")
 
 	body
+		//- Logo
 		.container
 			.row.justify-content-center
 				.col-md-6
 					.logo.text-center
 						.logo__name аполло 404
 						.logo__slogan хостинг компания
+		//- Navigation
 		nav.navigation
-			.container
-				.block Навигация
+			.navigation__toggle-button(id="navigation-toggle") Навигация
+				.navigation__toggle-icon
+					span
+					span
+					span
+			.container.container--mobile--no-padding
+				ul
+					li
+						a(href="#") главная
+					li
+						a(href="#") как мы работаем
+					li
+						a(href="#") фрилансерам
+					li
+						a(href="#") стартапам
+					li
+						a(href="#") тарифы
+					li
+						a(href="#") контакты
 		.slider
 			.container
 				.block Слайдер
@@ -73,4 +92,8 @@ html(lang="ru")
 					.col-md-4.col-xl-3
 						.block Колонка 3
 				.block Копирайт
+		script(src="libs/jquery-3.3.1.min.js")
+		script(src="libs/owlcarousel2/owl.carousel.min.js")
+		//- My script
+		script(src="js/main.js")
 

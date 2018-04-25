@@ -127,6 +127,116 @@ body {
     letter-spacing: 9px;
   }
 }
+.navigation {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #38383a;
+  box-shadow: 0px 5px 10px 0px #2a496d;
+}
+@media (min-width: 992px) {
+  .navigation {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
+.navigation .navigation__toggle-button--active {
+  background-color: #16385f;
+}
+.navigation .container--mobile--no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+  min-width: 99%;
+}
+@media (min-width: 992px) {
+  .navigation .container--mobile--no-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 992px;
+  }
+}
+@media (min-width: 1170px) {
+  .navigation .container--mobile--no-padding {
+    min-width: 1170px;
+  }
+}
+.navigation a {
+  display: block;
+  padding: 22px 15px;
+  text-decoration: none;
+  color: #FFF;
+}
+.navigation a.active,
+.navigation a:hover {
+  color: #ffcc00;
+}
+@media (min-width: 992px) {
+  .navigation a {
+    display: inline;
+  }
+}
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style-type: none;
+  display: none;
+  background-color: #35577D;
+}
+@media (min-width: 992px) {
+  .navigation ul {
+    display: flex!important;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+}
+.navigation li {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #ffcc00;
+  border-bottom: 1px solid #466a92;
+}
+.navigation li.active {
+  color: #ffcc00;
+}
+@media (min-width: 992px) {
+  .navigation li {
+    border: none;
+  }
+}
+.navigation__toggle-button {
+  padding: 23px 15px;
+  position: relative;
+  display: block;
+  background-color: #38383a;
+  cursor: pointer;
+}
+.navigation__toggle-button:focus,
+.navigation__toggle-button:active {
+  background-color: #16385f;
+}
+@media (min-width: 992px) {
+  .navigation__toggle-button {
+    display: none;
+  }
+}
+.navigation__toggle-icon {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+.navigation__toggle-icon span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  background: #fff;
+}
 .block {
   background-color: yellow;
   padding: 20px;
@@ -136,11 +246,6 @@ body {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-.navigation {
-  background-color: #414141;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 .slider {
   background-color: #215993;
