@@ -104,10 +104,10 @@ body {
   font-size: 33px;
   font-weight: 700;
   line-height: 1.5;
-  letter-spacing: 5px;
+  letter-spacing: 5.5px;
   text-transform: uppercase;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .logo__name {
     font-size: 38px;
     letter-spacing: 7px;
@@ -121,7 +121,7 @@ body {
   text-transform: uppercase;
   color: #A1BBD9;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .logo__slogan {
     font-size: 16px;
     letter-spacing: 9px;
@@ -210,9 +210,10 @@ body {
   }
 }
 .navigation__toggle-button {
-  padding: 23px 15px;
-  position: relative;
   display: block;
+  position: relative;
+  padding: 23px 15px;
+  font-size: 14px;
   background-color: #38383a;
   cursor: pointer;
 }
