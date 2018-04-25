@@ -517,6 +517,29 @@ body {
     line-height: 24px;
   }
 }
+.service-description__content p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 22px;
+}
+.service-description__button-more {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url('../img/icons/arrow-orange.png');
+  background-position: center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.service-description__img--m-b-25 {
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .service-description__img--m-b-25 {
+    margin-bottom: 0;
+  }
+}
 .block {
   background-color: yellow;
   padding: 20px;
