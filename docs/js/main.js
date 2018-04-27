@@ -53,7 +53,7 @@ $(document).ready(function(){
 	// }
 
 
-		// Скрываем меню при клике на него на смартфоне и планцете
+	// Скрываем меню при клике на него на смартфоне и планцете
 	// По клику на ссылку в меню запускаем ф-ю fnstart();
 	$('nav.navigation a').on("click", function(){
 		fnstart();
@@ -64,11 +64,11 @@ $(document).ready(function(){
 	// и сворачиваем/скрываем меню 
 	function fnstart(){	
 		if ( $("#navigation-toggle").hasClass("navigation__toggle-button--active")  ) {
-   			pull.toggleClass('navigation__toggle-button--active');
+			pull.toggleClass('navigation__toggle-button--active');
 			menu.slideToggle();
 		}
 	};
-	
+
 
 	$(window).resize(function(){
 		var w = $(window).width();
