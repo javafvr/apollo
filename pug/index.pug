@@ -17,7 +17,7 @@ html(lang="ru")
 
 	body
 		//- Logo
-		.container
+		.container#main
 			.row.justify-content-center
 				.col-md-6
 					.logo.text-center
@@ -33,17 +33,17 @@ html(lang="ru")
 			.container.container--mobile--no-padding
 				ul
 					li
-						a(href="#") главная
+						a(href="#main") главная
 					li
-						a(href="#") как мы работаем
+						a(href="#benefits") как мы работаем
 					li
-						a(href="#") фрилансерам
+						a(href="#freelance") фрилансерам
 					li
-						a(href="#") стартапам
+						a(href="#startup") стартапам
 					li
-						a(href="#") тарифы
+						a(href="#price") тарифы
 					li
-						a(href="#") контакты
+						a(href="#footer") контакты
 		//- Slider
 		.slider.text-center
 			.container
@@ -73,7 +73,7 @@ html(lang="ru")
 								.slider__title Highload площадка
 								.slider__slogan Супер мощные сервера, мгновенная масштабируемость. 
 		//- Benefits
-		.container.section.text-center
+		.container.section.text-center#benefits
 			.heading Как мы работаем
 			.row
 				.col-md-6.col-xl-3.benefit-block
@@ -127,15 +127,15 @@ html(lang="ru")
 				.col-xl-4
 					.block Карточка 1
 		footer.footer
-			.container
-				.row
-					.col-md-4.col-xl-3
-						.block Колонка 1
-					.col-md-4.col-xl-3
-						.block Колонка 2
-					.col-md-4.col-xl-3
-						.block Колонка 3
-				.block Копирайт
+		.container
+			.row
+				.col-md-4.col-xl-3
+					.block Колонка 1
+				.col-md-4.col-xl-3
+					.block Колонка 2
+				.col-md-4.col-xl-3
+					.block Колонка 3
+		.block Копирайт
 		script(src="libs/jquery-3.3.1.min.js")
 		script(src="libs/owlcarousel2/owl.carousel.min.js")
 		//- My script

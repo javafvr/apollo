@@ -17,7 +17,6 @@
 		background-color: #16385f;
 		
 	}
-
 	.container--mobile--no-padding{
 		padding-left: 0px;
 		padding-right: 0px;
@@ -32,6 +31,23 @@
 			min-width: 1170px;
 		}
 	}
+
+	.container--mobile--no-padding{
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 100%;
+		@media (min-width:992px){
+			padding-left: 15px;
+			padding-right: 15px;	
+		}
+
+		@media (min-width:1170px){
+			width: 1170px;
+		}
+
+		
+	}
+
 
 	a{
 		display: block;
@@ -57,6 +73,7 @@
 		background-color: #35577D;
 		@media (min-width:992px){
 			display: flex!important;
+			display: flex;
 			-webkit-justify-content: space-between;
 			        justify-content: space-between;
 			background-color: transparent;
