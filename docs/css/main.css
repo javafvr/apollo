@@ -694,16 +694,6 @@ p {
   color: #ffc80a;
   text-decoration: none;
 }
-.block {
-  background-color: yellow;
-  padding: 20px;
-  color: #000;
-  font-size: 32px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 .text-center {
   text-align: center;
 }
