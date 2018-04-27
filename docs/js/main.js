@@ -44,6 +44,32 @@ $(document).ready(function(){
 		}
 	});
 
+	// var w = $(window).width();
+	// if(w < 992){
+	// 	console.log("Клик по ссылке " + w);
+	// 	$('nav.navigation a').on("click", function(){
+	// 		menu.slideToggle();
+	// 	});
+	// }
+
+
+		// Скрываем меню при клике на него на смартфоне и планцете
+	// По клику на ссылку в меню запускаем ф-ю fnstart();
+	$('nav.navigation a').on("click", function(){
+		fnstart();
+	});
+
+	// В ф-ии fnstart(); проверяем - если меню открыто (проверяем по наличию класса --active у кнопки pull)
+	// тогда убираем класс модификатор --active у кнопки pull
+	// и сворачиваем/скрываем меню 
+	function fnstart(){	
+		if ( $("#navigation-toggle").hasClass("navigation__toggle-button--active")  ) {
+   			pull.toggleClass('navigation__toggle-button--active');
+			menu.slideToggle();
+		}
+	};
+	
+
 	$(window).resize(function(){
 		var w = $(window).width();
 		if(w > 768 && menu.is(':hidden')){
@@ -51,5 +77,11 @@ $(document).ready(function(){
 		}
 
 	});
+
+	//slide2id - плавная прокрутка по ссылкам внутри страницы
+	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
+		highlightSelector:"nav a"
+	});
+
 
 });

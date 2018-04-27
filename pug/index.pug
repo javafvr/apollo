@@ -17,7 +17,7 @@ html(lang="ru")
 
 	body
 		//- Logo
-		.container
+		.container#main
 			.row.justify-content-center
 				.col-md-6
 					.logo.text-center
@@ -33,17 +33,17 @@ html(lang="ru")
 			.container.container--mobile--no-padding
 				ul
 					li
-						a(href="#") главная
+						a(href="#main") главная
 					li
-						a(href="#") как мы работаем
+						a(href="#benefits") как мы работаем
 					li
-						a(href="#") фрилансерам
+						a(href="#freelance") фрилансерам
 					li
-						a(href="#") стартапам
+						a(href="#startup") стартапам
 					li
-						a(href="#") тарифы
+						a(href="#price") тарифы
 					li
-						a(href="#") контакты
+						a(href="#footer") контакты
 		//- Slider
 		.slider.text-center
 			.container
@@ -73,7 +73,7 @@ html(lang="ru")
 								.slider__title Highload площадка
 								.slider__slogan Супер мощные сервера, мгновенная масштабируемость. 
 		//- Benefits
-		.container.section.text-center
+		.container.section.text-center#benefits
 			.heading Как мы работаем
 			.row
 				.col-md-6.col-xl-3.benefit-block
@@ -100,7 +100,7 @@ html(lang="ru")
 							img(src="img/images/presentation.png" alt="Стремительно  развиваемся")
 					.benefit-block__header Стремительно  развиваемся
 					.benefit-block__descr Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-		.line
+		.line#freelance
 		//- Service-Description
 		.container.section.section--p-t-70.section--m-p-b-0.service-description
 			.row
@@ -115,7 +115,7 @@ html(lang="ru")
 						
 						p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 					a.service-description__button-more
-		.line
+		.line#startup
 		.container.section.section--p-t-70.section--m-p-b-0.service-description
 			.row
 				.col-md-6.order-md-last
@@ -129,7 +129,7 @@ html(lang="ru")
 						p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 					a.service-description__button-more
 		.line
-		.container.section
+		.container.section#price
 			.row.justify-content-center.text-center
 				.col-sm-6
 					h3.heading.heading--mb20 Тарифы и пакеты
@@ -175,7 +175,7 @@ html(lang="ru")
 								li ∞ Databases
 								li Unlimited Users
 						.button Начать
-		.footer.section
+		.footer.section#footer
 			.container
 				nav.row
 					.col-md-4.col-xl-3
@@ -217,6 +217,7 @@ html(lang="ru")
 				p © 2016 Аполло 440. Все права защищены.
 		script(src="libs/jquery-3.3.1.min.js")
 		script(src="libs/owlcarousel2/owl.carousel.min.js")
+		script(src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js")
 		//- My script
 		script(src="js/main.js")
 
