@@ -314,6 +314,8 @@ body {
   background: #fff;
 }
 .slider {
+  padding-top: 49px;
+  padding-bottom: 127px;
   background-image: url('../img/background/slider-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -323,6 +325,18 @@ body {
   background-color: #295489;
   -webkit-box-shadow: 3px 3px 25px 0px #688ab3;
   box-shadow: 3px 3px 25px 0px #688ab3;
+}
+@media (min-width: 768px) {
+  .slider {
+    padding-top: 70px;
+    padding-bottom: 93px;
+  }
+}
+@media (min-width: 992px) {
+  .slider {
+    padding-top: 100px;
+    padding-bottom: 127px;
+  }
 }
 .slider__title {
   font-size: 28px;
@@ -342,7 +356,7 @@ body {
   font-family: 'Noto Serif';
   font-size: 18px;
   line-height: 28px;
-  color: #A1BBD9;
+  color: #cddfe0;
 }
 @media (min-width: 992px) {
   .slider__slogan {
@@ -366,7 +380,6 @@ body {
   background: #D6D6D6;
 }
 .owl-carousel .owl-nav [class*='owl-']:hover {
-  /*background: #869791;*/
   color: #FFF;
   text-decoration: none;
 }
@@ -376,18 +389,25 @@ body {
 }
 .owl-carousel .owl-nav.disabled + .owl-dots {
   outline: transparent;
-  /*margin-top: 0px; */
 }
 .owl-carousel .owl-dots {
   position: absolute;
-  bottom: 30px;
+  bottom: -100px;
   width: 100%;
   text-align: center;
 }
-.owl-carousel.owl-dots .owl-dot {
+@media (min-width: 768px) {
+  .owl-carousel .owl-dots {
+    bottom: -65px;
+  }
+}
+.owl-carousel .owl-dots .owl-dot {
   display: inline-block;
   zoom: 1;
   *display: inline;
+}
+.owl-carousel .owl-dots .owl-dot:last-child span {
+  margin: 0;
 }
 .owl-carousel p.text-visible {
   padding-top: 25px;
@@ -402,16 +422,9 @@ body {
   transition: opacity 200ms ease;
   border-radius: 30px;
 }
-.owl-carousel .owl-dots .owl-dot:last-child span {
-  margin: 0;
-}
 .owl-carousel.owl-loaded {
-  height: 320px;
-  padding-top: 70px;
-  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
   -webkit-justify-content: space-between;
   justify-content: space-between;
   color: #FFF;
@@ -449,18 +462,6 @@ body {
 }
 .owl-carousel .owl-item div {
   display: block;
-}
-@media (min-width: 768px) {
-  .owl-carousel.owl-loaded {
-    height: 320px;
-    padding-top: 70px;
-  }
-}
-@media (min-width: 1200px) {
-  .owl-carousel.owl-loaded {
-    height: 400px;
-    padding-top: 109px;
-  }
 }
 .benefit-block {
   padding-bottom: 40px;
@@ -506,15 +507,13 @@ body {
   vertical-align: middle;
 }
 .benefit-block .benefit-block__descr {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   color: #777;
 }
 @media (min-width: 1200px) {
   .benefit-block .benefit-block__descr {
     margin-top: 20px;
-    font-size: 14px;
-    line-height: 24px;
   }
 }
 .block {
