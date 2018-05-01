@@ -336,7 +336,7 @@ body {
   background: #fff;
 }
 .slider {
-  padding-top: 49px;
+  padding-top: 100px;
   padding-bottom: 127px;
   background-image: url('../img/background/slider-bg.jpg');
   background-repeat: no-repeat;
@@ -348,18 +348,6 @@ body {
   -webkit-box-shadow: 3px 3px 25px 0px #688ab3;
   box-shadow: 3px 3px 25px 0px #688ab3;
 }
-@media (min-width: 768px) {
-  .slider {
-    padding-top: 70px;
-    padding-bottom: 93px;
-  }
-}
-@media (min-width: 992px) {
-  .slider {
-    padding-top: 100px;
-    padding-bottom: 127px;
-  }
-}
 .slider__title {
   font-size: 28px;
   line-height: 38px;
@@ -368,7 +356,7 @@ body {
   letter-spacing: -0.5px;
   font-weight: 700;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .slider__title {
     font-size: 32px;
     line-height: 42px;
@@ -380,7 +368,7 @@ body {
   line-height: 28px;
   color: #cddfe0;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .slider__slogan {
     font-size: 22px;
     line-height: 32px;
@@ -414,14 +402,9 @@ body {
 }
 .owl-carousel .owl-dots {
   position: absolute;
-  bottom: -100px;
-  width: 100%;
+  bottom: -62px;
   text-align: center;
-}
-@media (min-width: 768px) {
-  .owl-carousel .owl-dots {
-    bottom: -65px;
-  }
+  width: 100%;
 }
 .owl-carousel .owl-dots .owl-dot {
   display: inline-block;
