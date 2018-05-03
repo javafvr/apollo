@@ -36,8 +36,8 @@ $(document).ready(function(){
 				dots:true,
 
 			},
-		// breakpoint from 1200 up
-			1200 : {
+		// breakpoint from 992 up
+			992 : {
 				dots:false,
 
 			}
